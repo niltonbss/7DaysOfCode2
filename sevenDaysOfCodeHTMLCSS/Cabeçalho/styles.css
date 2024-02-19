@@ -1,59 +1,89 @@
-/* Resetando as margens e definindo a fonte padrão */
-body {
+/* Define variáveis CSS para reutilização de cores e estilos */
+:root {
+    --text-color: #667085; /* Cor do texto padrão */
+}
+
+/* Define estilos gerais para todos os elementos */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
 }
 
-/* Estilizando o cabeçalho da navbar */
-.navbar {
-    display: flex; /* Utilizando flexbox para alinhar os itens */
-    justify-content: space-between; /* Distribui os itens uniformemente */
-    align-items: center; /* Centraliza verticalmente os itens */
-    padding: 20px; /* Adiciona um espaço interno */
-    background-color: #333; /* Cor de fundo */
-    color: white; /* Cor do texto */
+/* Estilos para o corpo da página */
+body {
+    width: 100%;
+    height: 100vh; /* 100% da altura da viewport */
 }
 
-/* Estilizando o logotipo */
-.logo img {
-    max-width: 100px; /* Define a largura máxima da imagem */
+/* Estilos para a barra de navegação */
+nav {
+    display: flex;
+    justify-content: space-around; /* Espaço igual entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 1rem 0; /* Preenchimento na parte superior e inferior */
 }
 
-/* Estilizando o menu de navegação */
-.pages ul {
-    list-style-type: none; /* Removendo marcadores de lista */
-    margin: 0; /* Removendo margens */
-    padding: 0; /* Removendo preenchimento */
-    display: flex; /* Utilizando flexbox para alinhar os itens */
+/* Estilos para os links na barra de navegação */
+.links a {
+    color: var(--text-color); /* Cor do texto usando a variável */
+    text-decoration: none; /* Sem sublinhado nos links */
+    margin-right: 2rem; /* Espaço à direita para separar os links */
 }
 
-/* Estilizando os itens do menu */
-.pages li {
-    margin-right: 20px; /* Adiciona espaçamento entre os itens */
+/* Estilos para todos os botões */
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
-/* Estilizando os links do menu */
-.pages a {
-    text-decoration: none; /* Removendo sublinhado */
-    color: white; /* Cor do texto */
+/* Estilos específicos para o botão de inscrição */
+button#signUp {
+    background-color: #8E2424; /* Cor de fundo do botão */
+    color: #FFF; /* Cor do texto do botão */
 }
 
-/* Estilizando os botões */
-.buttons {
-    display: flex; /* Utilizando flexbox para alinhar os botões */
+/* Estilos para o logo em vermelho */
+.red-logo {
+    color: red; /* Cor do texto em vermelho */
+    text-align: center; /* Centraliza o texto */
+    font-size: 10px; /* Tamanho da fonte */
 }
 
-.buttons button {
-    margin-left: 10px; /* Adiciona espaçamento entre os botões */
-    padding: 8px 15px; /* Adiciona preenchimento interno */
-    border: none; /* Removendo borda */
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Altera o cursor ao passar por cima */
+/* Estilos para o título 'Por que somos diferentes' */
+.black-heading {
+    color: black; /* Cor do texto preto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 26px; /* Tamanho da fonte */
 }
 
-/* Estilizando o efeito hover nos botões */
-.buttons button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+
+
+/* Estilos para o parágrafo de texto em cinza */
+.gray-text {
+    color: gray; /* Cor do texto cinza */
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+
+.metric-container{
+    display: flex;
+}
+
+
+
+
+/* Estilos para o parágrafo de texto em cinza */
+.red-metric1 {
+    color: red; /* Cor do texto cinza */
+     /* Centraliza o texto */
+    font-size: 30px; /* Tamanho da fonte */
 }

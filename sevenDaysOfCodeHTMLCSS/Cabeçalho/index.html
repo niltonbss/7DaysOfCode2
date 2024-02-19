@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <!-- Importando o arquivo de estilo CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptimusTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Importando a fonte 'Inter' do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+  <!-- Importando o arquivo CSS -->
+  <link rel="stylesheet" href="D:\7DaysOfCode2\sevenDaysOfCodeHTMLCSS\Cabeçalho\styles.css">
+  <style>
+    /* Estilos adicionais inline para o conteúdo específico desta página */
+    .red-logo {
+      color: red; /* Cor do texto vermelho */
+      text-align: center; /* Alinhamento centralizado */
+      font-size: 10px; /* Tamanho da fonte de 10 pixels */
+    }
+    .black-heading {
+      color: black; /* Cor do texto preto */
+      font-size: 26px; /* Tamanho da fonte de 26 pixels */
+    }
+    .gray-text {
+      color: gray; /* Cor do texto cinza */
+      font-size: 12px; /* Tamanho da fonte de 12 pixels */
+    }
+  </style>
 </head>
 <body>
-    <!-- Cabeçalho da aplicação -->
-    <header class="navbar">
-        <!-- Seção do logotipo -->
-        <div class="logo">
-            <!-- Inserindo a imagem do logo da empresa -->
-            <img src="logo.png" alt="Logo da Empresa">
-        </div>
-        <!-- Seção do menu de navegação -->
-        <nav class="pages">
-            <ul>
-                <!-- Links para as páginas -->
-                <li><a href="#">Página 1</a></li>
-                <li><a href="#">Página 2</a></li>
-                <li><a href="#">Página 3</a></li>
-                <li><a href="#">Página 4</a></li>
-            </ul>
-        </nav>
-        <!-- Seção dos botões -->
-        <div class="buttons">
-            <!-- Botões para Entrar e Cadastrar -->
-            <button>Entrar</button>
-            <button>Cadastrar</button>
-        </div>
-    </header>
+  <nav>
+    <img src="assets/images/logo.svg"/>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Recursos</a>
+      <a href="#">Sobre nós</a>
+    </div>
+    <div class="buttons">
+      <button>Entrar</button>
+      <button id="signUp">Cadastrar</button>
+    </div>
+  </nav>
+  
+  <!-- Conteúdo adicional -->
+  <div class="red-logo">
+    <!-- Logo em vermelho -->
+    <p>sobre nós</p>
+  </div>
+  <!-- Título 'Por que somos diferentes' -->
+  <h1 class="black-heading">Por que somos diferentes</h1>
+  <!-- Parágrafo de texto em cinza -->
+  <p class="gray-text">Nós focamos nos detalhes de tudo que fazemos.Tudo para ajudar as empresas de <br>
+     todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+
+
+     <!-- Seção de métricas e resultados -->
+  <section class="metric-container">
+    <div class="red-metric1">400+</div>
+        <p></p>
+    <div class="red-metric2">100+</div>
+    <p></p>
+    <div class="red-metric3">20k</div>
+    <p></p>
+    <div class="red-metric4">500+</div>
+    <p></p>
+    
+  </section>
 </body>
 </html>
